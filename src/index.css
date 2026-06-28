@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-arch-green: #0F2A1A;
+  --color-trophy-gold: #C9A84C;
+  --color-marble: #F0EDE6;
+  --color-crimson: #8B1A1A;
+  --color-inscription: #1C1C1C;
+
+  --font-cinzel: "Cinzel", serif;
+  --font-lora: "Lora", serif;
+  --font-courier: "Courier Prime", monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F0EDE6;
+  color: #1C1C1C;
+  font-family: "Lora", serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  min-height: 100svh;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
